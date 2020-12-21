@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "buildersutils",
+  "version": "${version}",
+  "name": "Builders Utils",
+  "description": "Allows you to place multiple blocks at the same time and much more.",
+  "authors": [
+    "B0IIZZ"
+  ],
+  "contact": {
+	"email": "general.boiizz@gmail.com",
+	"homepage": "",
+	"sources": "https://github.com/b0iizz/minecraft-advancednbttooltip",
+	"issues": "https://github.com/b0iizz/minecraft-advancednbttooltip/issues/new"
+  },
+
+  "license": "MIT",
+  "icon": "assets/buildersutils/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.b0iizz.buildersutils.ModMain"
+    ],
+	"modmenu": [
+	  "me.b0iizz.buildersutils.config.ModMenuEntry"
+	]
+  },
+  "mixins": [
+    "buildersutils.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
